@@ -24,6 +24,7 @@ set number
 set shiftwidth=2
 set tabstop=2
 set wrap
+set encoding=utf-8
 
 "	allow the mouse click
 set mouse=a
@@ -53,3 +54,9 @@ map <leader>m :MRU<Enter>
 
 "	for NERDTree
 map <leader>n :NERDTree<Enter>
+
+" for omnicppcomplete
+map <c-/> <c-x><c-o>
+
+" add cpp tags
+set tags+=~/source/cpp/cpp_tags 
