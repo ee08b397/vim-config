@@ -13,6 +13,10 @@ The configuration file for vim.
 The configuration file for ctags.
 
 
+## cpp_tags
+The tags for std.
+
+
 ## .vim
 
 The directory of vim.
