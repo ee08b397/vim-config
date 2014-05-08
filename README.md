@@ -28,3 +28,4 @@ Plugins:
 * **t-comment**: easy commenter. (shortcuts: \<leader>b for block comment, \<leader>c for single line comment)
 * **FuzzyFinder**: easy file finder. (shortcut: \<leader>t)
 * **EasyMotion**: easy code motion. (shortcut: \<leader>w)
+* **OmniComplete**: code auto-complete. (shortcuts: \<control>x\<control>o for pop-up and \<control>p for auto-complete)
