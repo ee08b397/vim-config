@@ -22,9 +22,9 @@ The tags for std.
 The directory of vim.
 
 Plugins:
-* **snippet**: auto complete template.
-* **nerdtree**: tree structure explorer.
-* **mru**: most recent used file buffer.
-* **t-comment**: easy commenter.
-* **FuzzyFinder**: easy file finder.
-* **EasyMotion**: easy code motion.
+* **snippet**: auto complete template. (shortcut: \<tab>)
+* **nerdtree**: tree structure explorer. (shortcut: \<leader>n)
+* **mru**: most recent used file buffer. (shortcut: \<leader>m)
+* **t-comment**: easy commenter. (shortcuts: \<leader>b for block comment, \<leader>c for single line comment)
+* **FuzzyFinder**: easy file finder. (shortcut: \<leader>t)
+* **EasyMotion**: easy code motion. (shortcut: \<leader>w)
