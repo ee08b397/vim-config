@@ -60,3 +60,6 @@ map <c-/> <c-x><c-o>
 
 " add cpp tags
 set tags+=~/source/cpp/cpp_tags 
+
+" for easymotion
+map <leader>w <leader><leader>w
