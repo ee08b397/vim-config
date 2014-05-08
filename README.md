@@ -27,3 +27,4 @@ Plugins:
 * **mru**: most recent used file buffer.
 * **t-comment**: easy commenter.
 * **FuzzyFinder**: easy file finder.
+* **EasyMotion**: easy code motion.
