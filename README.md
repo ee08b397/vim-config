@@ -29,3 +29,4 @@ Plugins:
 * **FuzzyFinder**: easy file finder. (shortcut: \<leader>t)
 * **EasyMotion**: easy code motion. (shortcut: \<leader>w)
 * **OmniComplete**: code auto-complete. (shortcuts: \<control>x\<control>o for pop-up and \<control>p for auto-complete)
+	**DoxygenToolKit**: easy doxygen document generation. (shortcuts: \<leader>d)

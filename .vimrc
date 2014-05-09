@@ -63,3 +63,6 @@ set tags+=~/source/cpp/cpp_tags
 
 " for easymotion
 map <leader>w <leader><leader>w
+
+" for doxygen
+map <leader>d :Dox<Enter>
