@@ -12,32 +12,61 @@ set omnifunc=syntaxcomplete#Complete
 syntax enable 
 set background=dark
 colorscheme solarized
+
+"set t_Co=256
+
+" Basics {
+set nocompatible        " turn off vi-compatible mode 
+set noexrc              " don't use local version of .(g)vimrc, .exrc
+set background=dark     " blue shows much better
+" solarized options 
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
 let g:solarized_termcolors=256
-"colorscheme phd
-"colorscheme oceanlight
-"colorscheme kolor
-"colorscheme desert 
-setlocal spell spelllang=en_us
+"colorscheme desert
+colorscheme solarized
+"         " }
 
-set guifont=Monaco:h15
-set number
-set shiftwidth=2
-set tabstop=2
-set wrap
-set encoding=utf-8
-
-"	allow the mouse click
+" Vim UI {
+"highlight StatusLineNC ctermbg=gray ctermfg=gray
+" the following lines explicitly define status line coloring when splitting
+"hi ModeMsg cterm=bold ctermbg=red
+"hi StatusLine term=reverse ctermfg=2 ctermbg=white gui=bold,reverse
+hi StatusLineNC term=reverse ctermfg=black ctermbg=darkyellow cterm=none
+" hi StatusLineNC term=reverse cterm=none 
+" highlight StatusLine   term=reverse ctermfg=LightGray ctermbg=Bluecterm=NONE
+" highlight StatusLineNC term=reverse ctermfg=DarkCyan ctermbg=Blue cterm=NONE
+"set cursorline
 set mouse=a
+set colorcolumn=80      " color the characters exceeds the column limit 
+set incsearch           " highlight as search phrase is typed
+set laststatus=2        " always show status line
+set linespace=0         " don't insert extra pixel lines between rows
+set listchars=tab:>-,trail:-  " show tabs and trailing
+set nostartofline   " leave cursor in current position
+set number        " turn on line numbers
+set numberwidth=5   " 5 digits displayed for line numbers (0-99999)
+set report=0      " report anything changed with :...
+set ruler       " show current position along bottom
+set scrolloff=10    " keep 10 lines (top/bottom) in view for scope
+set showcmd       " show command being typed
+set showmatch     " show matching brackets
+set sidescrolloff=10  " keep 5 lines at size
+set statusline=%F%m%r%h%w\ %=[C%v,L%l/%L]
+"              | | | | |   |   |   |  + total lines 
+"              | | | | |   |   |   + current line 
+"              | | | | |   |   + current column 
+"              | | | | |   + right align rest of status 
+"              | | | | +-- preview flag in square brackets
+"              | | | +-- help flag in square brackets
+"              | | +-- readonly flag in square brackets
+"              | +-- modified flag in square brackets
+"              +-- full path to file in the buffer
+" }
+
 
 " set to autoread when a file is modified outside
 set autoread
-
-" reload vimrc if it is modified
-autocmd! bufwritepost vimrc source ~/.vimrc
-
-"	always show current position
-set ruler
-
 
 " shortcut for save
 map <leader>w :w!<Enter>
@@ -46,23 +75,17 @@ map <leader>w :w!<Enter>
 map <leader>c <c-_><c-_>
 map <leader>b <c-_>b
 
-"	for fuzzyfinder plugin
-map <leader>t :FufFile<Enter>
-
 "	for mru file plugin
 map <leader>m :MRU<Enter>
 
-"	for NERDTree
+" for NERDTree
 map <leader>n :NERDTree<Enter>
-
-" for omnicppcomplete
-map <c-/> <c-x><c-o>
-
-" add cpp tags
-set tags+=~/source/cpp/cpp_tags 
 
 " for easymotion
 map <leader>w <leader><leader>w
+
+" for FuzzyFinder
+map <leader>t :FufFile<Enter>
 
 " for doxygen
 map <leader>d :Dox<Enter>
